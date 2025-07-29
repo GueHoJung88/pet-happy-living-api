@@ -8,3 +8,4 @@ pydantic-settings
 asyncpg
 email-validator
 httpx
+alembic
