@@ -36,3 +36,9 @@ docker compose $COMPOSE_FILES --env-file $ENV_FILE up -d $BUILD_FLAG --force-rec
 
 echo "📦 [STATUS] Container status:"
 docker compose $COMPOSE_FILES ps
+
+echo ""
+echo "🌐 [SERVICE URL]"
+echo "📖 API Documentation: http://localhost:8000/docs"
+echo "🔗 Health Check: http://localhost:8000/api/v1/health"
+echo ""

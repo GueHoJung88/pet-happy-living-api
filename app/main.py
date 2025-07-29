@@ -21,7 +21,7 @@ def start_ssh_tunnel():
             ssh_username=settings.SSH_USER,
             ssh_private_key=settings.PRIVATE_KEY_PATH,
             remote_bind_address=(settings.POSTGRES_HOST, settings.POSTGRES_PORT),
-            local_bind_address=("127.0.0.1", 15432)
+            local_bind_address=("127.0.0.1", settings.POSTGRES_LOCAL_PORT)
         )
         tunnel.start()
     else:
