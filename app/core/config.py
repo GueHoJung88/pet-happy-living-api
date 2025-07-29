@@ -19,6 +19,7 @@ class Settings(BaseSettings):
     # PostgreSQL 정보
     POSTGRES_URL: str = os.getenv("POSTGRES_URL", "localhost")
     POSTGRES_HOST: str = os.getenv("POSTGRES_HOST","localhost")
+    POSTGRES_LOCAL_PORT: int = os.getenv("POSTGRES_LOCAL_PORT",15432)
     POSTGRES_PORT: int = os.getenv("POSTGRES_PORT",5432)
     POSTGRES_DATABASE_NAME: str = os.getenv("POSTGRES_DATABASE_NAME","petple_service")
     POSTGRES_USER: str = os.getenv("POSTGRES_USER","postgres")
